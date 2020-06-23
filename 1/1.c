@@ -17,19 +17,15 @@ double bisection(int p, int q, double (*func)(int, int, double)) {
     double b = 20;
     double xp;
     xp = (a + b) / 2;
-    int c = func(p, q , xp);
-        while(fabs(c) >= EPSILON)
-        {
-            if((c * func(p, q , a)) > 0)
-            {
+    double c = func(p, q , xp);
+        while(fabs(c) >= EPSILON) {
+            if((c * func(p, q , a)) > 0) {
                 a = xp;
                 b = b;
                 xp = (a + b) / 2;
                 c = func(p, q , xp);
                 //printf("%.4f\n", xp);
-            }
-            else
-            {
+            } else {
                 a = a;
                 b = xp;
                 xp = (a + b) / 2;
