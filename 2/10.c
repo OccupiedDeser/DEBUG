@@ -10,7 +10,7 @@ int main() {
     int sum;
     scanf("%d %d", &m, &n);
     for(i = 0; i < m; i++){
-        for(j = 0; j < n; j++)
+        for(j = 0; j < m; j++)
         {
             result[i][j] = 0;
         }
@@ -22,9 +22,9 @@ int main() {
         }
     }
     
-    for (j = 0; j < m; j++){
-        for (i = 0; i < n; i++){
-            scanf("%d", &matrix_b[i][j]);
+    for (j = 0; j < n; j++){
+        for (i = 0; i < m; i++){
+            scanf("%d", &matrix_b[j][i]);
         }
     }
     
