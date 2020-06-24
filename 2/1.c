@@ -21,7 +21,7 @@ int main() {
     int sum[m][m];
     for (i = 0; i < m; i++) {
         for (j = 0; j < m; j++) {
-            sum[m][m] = 0;
+            sum[i][j] = 0;
         }
     }
     for (i = 0; i < m; i++) {
@@ -37,7 +37,9 @@ int main() {
                 printf(" ");
             }
         }
-        printf("\n");
+        if(i != m - 1){
+            printf("\n");
+        }
     }
     return 0;
 }
