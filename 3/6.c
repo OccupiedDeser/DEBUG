@@ -38,7 +38,7 @@ int main() {
         		printf("%d ", matrix[start][j]);
     		}
     		for (int i = start + 1; i < row; i++) {
-                if (i+1 == row && column-2 == start) {
+                if (i+1 == row && column-1 == start) {
                     printf("%d", matrix[i][column-1]);
                     break;
                 } else
@@ -63,7 +63,6 @@ int main() {
     	column--;
     	row--;
     }
-
 
 
     return 0;

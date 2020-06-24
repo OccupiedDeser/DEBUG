@@ -12,7 +12,7 @@ int main() {
     
     for (int i = 0; i < m; i++){
         for (int j = 0; j < n; j++){
-            scanf("%d ", &matrix[i][j]);
+            scanf("%d", &matrix[i][j]);
         }
     }
 
@@ -22,16 +22,22 @@ int main() {
         /* Print the first row from the remaining rows */
         for (int i = l; i < n; i++)
         {
-            printf("%d ", matrix[k][i]);
-
+            printf("%d", matrix[k][i]);
+            if (i != n - 1 || k + 1 != m)//判断是否为最后一个数
+            {
+                printf(" ");
+            }
         }
         k++;
  
         /* Print the last column from the remaining columns */
         for (int i = k; i < m; i++)
         {
-            printf("%d ", matrix[i][n - 1]);
-
+            printf("%d", matrix[i][n - 1]);
+            if (i != m - 1 || l + 1 != n)//判断是否为最后一个数
+            {
+                printf(" ");
+            }
         }
         n--;
  
@@ -40,7 +46,11 @@ int main() {
         {
             for (int i = n - 1; i >= l; i--)
             {
-                printf("%d ", matrix[m - 1][i]);
+                printf("%d", matrix[m - 1][i]);
+                if (i != l || k + 1 != m)//判断是否为最后一个数
+                {
+                    printf(" ");
+                }
  
             }
             m--;
@@ -52,10 +62,10 @@ int main() {
             for (int i = m - 1; i >= k; i--)
             {
                 printf("%d", matrix[i][l]);
-                if (i != k){
+                if (i != k || l + 1 != n)//判断是否为最后一个数
+                {
                     printf(" ");
-            }
-
+                }
             }
             l++;    
         }        

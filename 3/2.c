@@ -59,6 +59,11 @@ int main() {
         }
         n0--;
         m0--;
+        if (m == n && m % 2 && n - n0 == n0 - 1)
+        {
+            printf("%d", matrix[n - n0][n - n0]);
+            i++;
+        }
     }
     
     return 0;
