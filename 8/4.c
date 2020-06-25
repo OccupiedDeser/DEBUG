@@ -12,7 +12,7 @@ int main() {
     }
  
     for (int j = 0; j < n; j++){
-        for (int k = 0; k <= n - j; k++){
+        for (int k = 0; k < n - j - 1; k++){
             char temp[20];
             if((strlen(name[k]) < strlen(name[k + 1]))){
                 strcpy(temp, name[k]);
