@@ -10,7 +10,7 @@ int main() {
             break;
         }
         int c = (int)n;
-        arr[i % 32] += c;           //mistake: '+' omitted
+        arr[i % 32] += c; // mistake: '+' omitted
         i++;
     }
 

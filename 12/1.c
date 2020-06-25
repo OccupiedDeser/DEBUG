@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 #define PI 3.14159
 int main() {
@@ -7,7 +7,7 @@ int main() {
     double a;
     double b;
     scanf("%lf", &r);
-    
+
     a = 2 * PI * r;
     printf("%.3f\n", a);
     b = PI * r * r;

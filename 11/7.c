@@ -3,8 +3,8 @@
 int main() {
     char str[500];
     char fs[33];
-    int  arr[32];
-    int  bits[32];
+    int arr[32];
+    int bits[32];
     int i;
     memset(arr, 0, sizeof(arr));
     memset(fs, '\0', sizeof(fs));

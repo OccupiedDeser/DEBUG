@@ -7,36 +7,36 @@ int main() {
     int n;
     int i, j, k;
     int temp;
-    
+
     scanf("%d%d", &m, &n);
     int matrixResult[n][n];
-    
+
     for (i = 0; i < m; i++) {
-        for (j = 0; j < n; j++){
+        for (j = 0; j < n; j++) {
             scanf("%d", &matrix_a[i][j]);
         }
     }
-    
+
     for (i = 0; i < n; i++) {
-        for (j = 0; j < m; j++){
+        for (j = 0; j < m; j++) {
             scanf("%d", &matrix_b[i][j]);
         }
     }
-    
-     for (i = 0; i < m; i++) {              //mistake: m and n reversed
+
+    for (i = 0; i < m; i++) { // mistake: m and n reversed
         for (j = 0; j < m; j++) {
             temp = 0;
             for (k = 0; k < n; k++) {
                 temp += matrix_a[i][k] * matrix_b[k][j];
             }
             matrixResult[i][j] = temp;
-            if(j == m - 1) {
+            if (j == m - 1) {
                 printf("%d\n", matrixResult[i][j]);
             } else {
                 printf("%d ", matrixResult[i][j]);
             }
         }
     }
-    
+
     return 0;
 }

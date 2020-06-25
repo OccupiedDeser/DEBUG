@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <string.h>     //mistake: head file omitted
+#include <string.h> //mistake: head file omitted
 int main() {
     char in[500];
     char out[33];
     char oneC;
-    int  oneInt;
-    int  i;
-    int  j;
-    int  k;
-    int  arr[32];
-    int  bits[32];
+    int oneInt;
+    int i;
+    int j;
+    int k;
+    int arr[32];
+    int bits[32];
 
     scanf("%s", in);
     k = strlen(in);
@@ -23,7 +23,7 @@ int main() {
     for (i = 1; i <= k; i++) {
         oneC = in[i - 1];
         oneInt = (int)oneC;
-        arr[i % 32] += oneInt;      //mistake: '+' omitted
+        arr[i % 32] += oneInt; // mistake: '+' omitted
     }
 
     // assign bits
