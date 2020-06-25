@@ -14,8 +14,8 @@ int main() {
         scanf("%d", &numbers[i]);
     }
     for (j = 0; j < n; j++) {
-        for(k = j; k < n - 1; k++){
-            if(numbers[k] < numbers[k+1]){
+        for(m = k = j; k < n - 1; k++){//找出j之后最大的元素，即numbers[m]
+            if(numbers[m] < numbers[k+1]){
                 m = k + 1;
             }
            
