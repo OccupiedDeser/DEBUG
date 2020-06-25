@@ -2,7 +2,7 @@
 int main() {
     int a, b, c;
     scanf("%d-%d-%d", &a, &b, &c);
-    if (b > 12 || c > 31)
+    if (b > 12 || c > 31 || !(a * b * c)) // a\b\c不为0
         printf("NO");
     else if (b == 1 || b == 3 || b == 5 || b == 7 | b == 8 || b == 10 ||
              b == 12) {
@@ -17,7 +17,8 @@ int main() {
             printf("YES");
     } else if (c <= 28)
         printf("YES");
-    else if (a % 100 != 0 && a % 4 == 0 || a % 400 == 0) {//此处|也可以，不过感觉用||习惯
+    else if (a % 100 != 0 && a % 4 == 0 ||
+             a % 400 == 0) { //此处|也可以，不过感觉用||习惯
         if (c <= 29)
             printf("YES");
         else
