@@ -12,10 +12,10 @@ int main() {
         gets(name);
         current = strlen(name);
         if (current > max) {
-           max = current;
-           strcpy(maxName, name);
+            max = current;
+            strcpy(maxName, name);
         }
     }
-    printf(maxName);
+    printf("%s", maxName);
     return 0;
 }
