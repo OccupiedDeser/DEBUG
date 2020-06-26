@@ -21,13 +21,13 @@ Node *circle_create(int n) {
     int i;
 
     // 创建第一个链表节点并加数据
-    temp = (Node *) malloc(sizeof(Node));
+    temp = (Node *)malloc(sizeof(Node));
     head = temp;
     head->data = 1;
 
     // 创建第 2 到第 n 个链表节点并加数据
-    for(i = 2; i <= n; i++) {
-        new_node = (Node *) malloc(sizeof(Node));
+    for (i = 2; i <= n; i++) {
+        new_node = (Node *)malloc(sizeof(Node));
         new_node->data = i;
         temp->next = new_node;
         temp = new_node;
@@ -40,42 +40,48 @@ Node *circle_create(int n) {
 }
 
 void count_off(Node *head, int n, int k, int m) {
-     Node *temp, *pre;
+    Node *temp, *pre;
     pre = head;
     temp = head;
-    
-    for (int i = 1 ; i < k - 1; i++) {
-        pre = pre -> next;
+    int i;
+    if (k == 1) {
+        for (i = 1; i < n; i++) {
+            pre = pre->next;
+        }
+    } else {
+        for (i = 1; i < k - 1; i++) {
+            pre = pre->next;
+        }
     }
-    
+
     int num = 0;
-    
+
     while (num < n) {
-        if (m == 1){
+        if (m == 1) {
             if (num == n - 1) {
-                printf("%d", pre -> data);
-            }else{
-                printf("%d ", pre -> data);
+                printf("%d", pre->next->data);
+            } else {
+                printf("%d ", pre->next->data);
             }
-            pre = pre -> next;
-            free(pre);
+            temp = pre->next;
+            pre->next = temp->next;
+            free(temp);
             num++;
-        }else{
-            for (int i = 1 ; i < m; i++) {
-                pre = pre -> next;
+        } else {
+            for (int i = 1; i < m; i++) {
+                pre = pre->next;
             }
-            temp = pre -> next;
+            temp = pre->next;
             if (num == n - 1) {
-                printf("%d", temp -> data);
-            }else{
-                printf("%d ", temp -> data);
+                printf("%d", temp->data);
+            } else {
+                printf("%d ", temp->data);
             }
-            pre -> next = temp -> next;
+            pre->next = temp->next;
             free(temp);
             num++;
         }
     }
-    
-    
+
     return;
 }

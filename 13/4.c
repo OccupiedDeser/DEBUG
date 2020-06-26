@@ -21,13 +21,13 @@ Node *circle_create(int n) {
     int i;
 
     // 创建第一个链表节点并加数据
-    temp = (Node *) malloc(sizeof(Node));
+    temp = (Node *)malloc(sizeof(Node));
     head = temp;
     head->data = 1;
 
     // 创建第 2 到第 n 个链表节点并加数据
-    for(i = 2; i <= n; i++) {
-        new_node = (Node *) malloc(sizeof(Node));
+    for (i = 2; i <= n; i++) {
+        new_node = (Node *)malloc(sizeof(Node));
         new_node->data = i;
         temp->next = new_node;
         temp = new_node;
@@ -40,28 +40,41 @@ Node *circle_create(int n) {
 }
 
 void count_off(Node *head, int n, int k, int m) {
-    Node *temp, *prev;
+    Node *temp, *pre;
+    int i;
+    int times;
+    times = 1;
     temp = head;
-    prev = temp;
-    
-    while (temp != NULL && temp->data != k) {
-        prev = temp;
-        temp = temp->next;
-    }
-    if (temp == NULL) return;
-    
-    int count = 0;
-    
-    while (count < n) {
-        for (int i = 1; i < m; i++) {
-            prev = temp;
-            temp = temp->next;
+    pre = head;
+    if (k == 1) {
+        for (i = 1; i < n; i++) {
+            pre = pre->next;
         }
-        printf("%d ", temp->data);
-        count++;
-        prev->next = temp->next;
-        temp = temp->next;
+    } else {
+        for (i = 1; i < k - 1; i++) {
+            pre = pre->next;
+        }
     }
-    
+    temp = pre->next;
+    i = 1;
+    while (times <= n) {
+        if (i == m) {
+            printf("%d", temp->data);
+            times++;
+            pre->next = pre->next->next;
+            temp = pre;
+            if (times != n + 1) {
+                printf(" ");
+            }
+            pre = temp;
+            temp = temp->next;
+            i = 1;
+            continue;
+        }
+        pre = temp;
+        temp = temp->next;
+        i++;
+    }
+
     return;
 }
