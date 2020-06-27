@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int matrix[100][100];
     int m;
     int n;
@@ -19,54 +20,57 @@ int main() {
             for (int i = 0; i < m; i++) {
                 if (i == m - 1) {
                     printf("%d", matrix[i][0]);
-                } else
+                } else {
                     printf("%d ", matrix[i][0]);
+                }
             }
         } else if (m == 1) {
             for (int j = 0; j < n; j++) {
                 if (j == n - 1) {
                     printf("%d", matrix[0][j]);
-                } else
+                } else {
                     printf("%d ", matrix[0][j]);
+                }
             }
         } else {
             for (int j = start; j < column; j++) {
                 if (start + 1 == row && column - 1 == j) {
                     printf("%d", matrix[start][j]);
                     break;
-                } else
+                } else {
                     printf("%d ", matrix[start][j]);
+                }
             }
-            if (start + 1 == row) //如果为仅剩的一行，即可返回，否则向左会输出
-            {
+            if (start + 1 == row) {
                 break;
-            }
+            } //如果为仅剩的一行，即可返回，否则向左会输出
             for (int i = start + 1; i < row; i++) {
                 if (i + 1 == row && column - 1 == start) {
                     printf("%d", matrix[i][column - 1]);
                     break;
-                } else
+                } else {
                     printf("%d ", matrix[i][column - 1]);
+                }
             }
-            if (start + 1 ==
-                column) //如果为仅剩的一列，即可返回，否则向上会输出
-            {
+            if (start + 1 == column) {
                 break;
-            }
+            } //如果为仅剩的一列，即可返回，否则向上会输出
 
             for (int j = column - 2; j >= start; j--) {
                 if (row - 2 == start && j == start) {
                     printf("%d", matrix[row - 1][j]);
                     break;
-                } else
+                } else {
                     printf("%d ", matrix[row - 1][j]);
+                }
             }
             for (int i = row - 2; i > start; i--) {
                 if (i == start + 1 && start + 1 == column - 1) {
                     printf("%d", matrix[i][start]);
                     break;
-                } else
+                } else {
                     printf("%d ", matrix[i][start]);
+                }
             }
         }
         start++;

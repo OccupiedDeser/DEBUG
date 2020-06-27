@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int main() {
+int main()
+{
     int matrix_a[10][10];
     int matrix_b[10][10];
     int m;
@@ -17,28 +18,9 @@ int main() {
             scanf("%d", &matrix_b[i][j]);
         }
     }
-    /*
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            printf("%d ",matrix_a[i][j]);
-        }
-        printf("\n");
-    }
-    for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
-            printf("%d ",matrix_b[i][j]);
-        }
-        printf("\n");
-    }
-    */
+
     int *m3 = (int *)malloc(sizeof(int) * m * m);
     memset(m3, 0, sizeof(int) * m * m);
-    // for(int i=0;i<m;i++){
-    //     for(int j=0;j<m;j++){
-    //         printf("%d ",m3[i][j]);
-    //     }
-    //     printf("\n");
-    // }
 
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < m; j++) {
@@ -54,7 +36,6 @@ int main() {
                 printf(" ");
             }
         }
-
         printf("\n");
     }
     free(m3);
