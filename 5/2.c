@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <string.h>
-void swap(char *a, char *b) {
+
+void swap(char *a, char *b)
+{
     char temp;
     temp = *a;
     *a = *b;
     *b = temp;
 }
-int main() {
+
+int main()
+{
     int i;
     int j;
     int k;

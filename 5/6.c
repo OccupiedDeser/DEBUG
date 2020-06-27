@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     int i, k;
     char n[10][21], m[21];
     for (i = 0; i < 10; i++) {
