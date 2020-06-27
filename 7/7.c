@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main() 
+{
     int Year, Month, Date;
     int Leapyear, Datevalid, Februaryvalid, Month30valid, Month31valid;
     scanf("%d-%d-%d", &Year, &Month, &Date);

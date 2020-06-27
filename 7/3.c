@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main() 
+{
     int a, b, c;
     scanf("%d-%d-%d", &a, &b, &c);
     if (b > 12 || c > 31 || b < 1 || c < 1)
@@ -15,7 +16,7 @@ int main() {
             printf("NO");
         else
             printf("YES");
-    } else if (c <= 28) {       //cases of February
+    } else if (c <= 28) { // cases of February
         printf("YES");
     } else if ((a % 100 != 0 && a % 4 == 0) || a % 400 == 0) {
         if (c <= 29)
