@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main() 
+{
     char str[500];
     char fs[33];
     int arr[32];

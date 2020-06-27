@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define PI 3.14159
-int main() {
+int main()
+{
     float r;
     float c, s;
     scanf("%g", &r);

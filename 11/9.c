@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h> //mistake: head file omitted
-int main() {
+int main() 
+{
     char in[500];
     char out[33];
     char oneC;

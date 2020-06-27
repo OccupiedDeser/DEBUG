@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main() 
+{
     int arr[32];
     memset(arr, 0, sizeof(arr));
     char n;

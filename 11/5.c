@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+ {
     int arr[32];
     int bits[32];
     char str[501];

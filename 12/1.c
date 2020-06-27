@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 #define PI 3.14159
-int main() {
+int main() 
+{
     double r;
     double a;
     double b;
