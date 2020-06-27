@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     char n;
     int a[3] = {0, 0, 0};
     for (int i = 0; i < 3; i++) {

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     int r = 0, w = 0, x = 0;
     char sign[4];
     char temp[3];

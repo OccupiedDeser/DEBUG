@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main()
+{
     char before[100];
     scanf("%s", before);
-    char calculate[2500][4]; //ÖÁ¶à2500
+    char calculate[2500][4]; //ï¿½ï¿½ï¿½ï¿½2500
     int i = 0;
     int count = 0;
     while (scanf("%s", calculate[i]) != EOF) {
@@ -19,7 +20,7 @@ int main() {
         if (before[i] == 'x')
             result += 1;
     }
-    //¼ÆËãºóµÄ½á¹û
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½
     for (i = 0; i < count; i++) {
         if (calculate[i][0] == '+') {
             if (calculate[i][1] == 'r' && result / 4 == 0)

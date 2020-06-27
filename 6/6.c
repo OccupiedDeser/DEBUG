@@ -2,7 +2,8 @@
 #include <string.h>
 #include <math.h>
 
-int main() {
+int main()
+{
     int r = 0;
     int w = 0;
     int x = 0;
