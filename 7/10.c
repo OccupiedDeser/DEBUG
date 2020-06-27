@@ -1,9 +1,10 @@
 #include <math.h>
 #include <stdio.h>
-int main() {
+int main()
+{
     int a, b, c;
     scanf("%d-%d-%d", &a, &b, &c);
-    if ((b < 1) || (b > 12)) {
+    if ((b < 1) || (b > 12) || a == 0) {
         printf("NO");
     } else if ((b == 1) && ((c < 1) || (c > 31))) {
         printf("NO");
