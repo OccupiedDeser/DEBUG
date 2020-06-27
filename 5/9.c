@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main() 
+{
     int i, j;
     char name[10][21] = {0};
     for (i = 0, j = 0; i < 10; i++) {

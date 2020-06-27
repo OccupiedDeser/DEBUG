@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-void swap(char *a, char *b) {
+void swap(char *a, char *b) 
+{
     char temp;
     temp = *a;
     *a = *b;
     *b = temp;
 }
-int main() {
+int main() 
+{
     int i;
     int j;
     int k;
@@ -29,7 +31,7 @@ int main() {
     for (m = 0; m < 10; m++) {
         printf("%s", name[m]);
         if (m != 9) {
-            printf(" \n");
+            printf("\n");
         }
     }
 

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 void swap(char *b, char *c);
-int main() {
+int main() 
+{
     char name[10][21];
     int i;
     int j;
@@ -22,7 +23,8 @@ int main() {
     return 0;
 }
 
-void swap(char *b, char *c) {
+void swap(char *b, char *c) 
+{
     char temp[21] = {0};
     strcpy(temp, b);
     strcpy(b, c);

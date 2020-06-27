@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-void swap(char *b, char *c) {
+void swap(char *b, char *c) 
+{
     char temp[21];
     strcpy(temp, b);
     strcpy(b, c);
     strcpy(c, temp);
 }
-int main() {
+int main() 
+{
     char name[10][21];
     int i;
     int j;
