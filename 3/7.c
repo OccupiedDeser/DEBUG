@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main() 
+{
     int matrix[100][100];
     int m;
     int n;
@@ -27,7 +28,7 @@ int main() {
         endX = m - 1 - startX;
         endY = n - 1 - startY;
         // output a row, towards right
-        if (startY < endY) {
+        if (startY <= endY) {
             for (j = startY; j <= endY; j++) {
                 printf("%d", matrix[startX][j]);
                 if (j < endY || startX < endX) {
@@ -45,7 +46,7 @@ int main() {
             }
         }
         // output a row, towards left
-        if (endX > startX && startY < endY) {
+        if (endX > startX && startY <= endY) {
             for (j = endY - 1; j >= startY; j--) {
                 printf("%d", matrix[endX][j]);
                 if (j > startY || startX < endX - 1) {
@@ -54,7 +55,7 @@ int main() {
             }
         }
         // ouput a col, towards up
-        if (endX - 1 > startX && startY < endY) {
+        if (endX - 1 > startX && startY <= endY) {
             for (i = endX - 1; i >= startX + 1; i--) {
                 printf("%d", matrix[i][startX]);
                 if (i > startX + 1 || startY < endY - 1) {
