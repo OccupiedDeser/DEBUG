@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int main() {
-	int matrix[100][100];
+int main() 
+{
+	int matrix[101][101];
 	int m;
 	int n;
 	int i, j;
