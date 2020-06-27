@@ -1,7 +1,8 @@
 #include <math.h>
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int n = 10;
     int m;
     int a[10];
