@@ -4,7 +4,8 @@ void add(char);
 void delete(char);
 int rwx = 0;
 
-int main() {
+int main() 
+{
     //initiation
     char temp;
     while (1) {

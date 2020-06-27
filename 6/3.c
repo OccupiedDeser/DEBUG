@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main() 
+{
     int i = 0;
     int counter = 0;
 	char origin[4];
