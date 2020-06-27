@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main()
+{
     int n;
     int i, j;
     scanf("%d", &n);
@@ -18,7 +19,6 @@ int main() {
             }
         }
     }
-    //}
 
     int max = strlen(names[0]);
     int number = 0;

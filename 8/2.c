@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+
+int main()
+{
     int n;
     scanf("%d\n", &n);
     char names[n][101];
@@ -11,17 +13,8 @@ int main() {
     }
     max[0] = '\0';
     for (int i = 0; i < n; i++) {
-        // for (int j = 0; j < n - 1 - i; j++) {
-        //     max == names[j + 1];
-        //     if (strlen(names[j]) > strlen(names[j + 1])) {
-        //         strcpy(max, names[j]);
-        //         strcpy(names[j], names[j + 1]);
-        //         strcpy(names[j], max);
-        //     }
-        // }
-        if(strlen(names[i]) > strlen(max))
-        {
-            strcpy(max,names[i]);
+        if (strlen(names[i]) > strlen(max)) {
+            strcpy(max, names[i]);
         }
     }
 
