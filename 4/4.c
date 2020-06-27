@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n = 10;
     int m;
     int numbers[10];
@@ -8,7 +9,7 @@ int main() {
     for (i = 0; i < 10; i++) {
         scanf("%d", &numbers[i]);
     }
-    // ¶ÁÈë¸ø¶¨µÄÊı×Ö
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     for (j = 0; j < 9; j++) {
         for (k = 0; k < 9 - j; k++) {
             if (numbers[k] < numbers[k + 1]) {

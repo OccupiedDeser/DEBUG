@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n = 10;
     int m;
     int numbers[10];
     int i, j;
     int tmpt;
 
-    // ¶ÁÈë¸ø¶¨µÄÊý×Ö
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     for (i = 0; i < n; i++) {
         scanf("%d", &numbers[i]);
     }
