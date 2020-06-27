@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
     char input;
     int n;
     scanf("%d\n", &n);

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
     int n;
     scanf("%d\n", &n);
     size_t max = 0;

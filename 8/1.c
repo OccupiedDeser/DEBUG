@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main() 
+{
     int n;
     int maxlen = 0;
     char max[101];
