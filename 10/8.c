@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n, i, j;
-    // printf("Please enter range:");
     scanf("%d", &n);
     for (i = 2; i <= n; i++) {
         for (j = 2; j < i; j++) {

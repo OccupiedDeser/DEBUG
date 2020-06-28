@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     int n, i, j, flag;
     scanf("%d", &n);
     if (n == 2) {
