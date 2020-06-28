@@ -20,54 +20,54 @@ Node *circle_create(int n) {
     Node *temp, *new_node, *head;
     int i;
 
-    // 创建第一个链表节点并加数据
-    temp = (Node *) malloc(sizeof(Node));
+    // create the first node and assign it
+    temp = (Node *)malloc(sizeof(Node));
     head = temp;
     head->data = 1;
 
-    // 创建第 2 到第 n 个链表节点并加数据
-    for(i = 2; i <= n; i++) {
-        new_node = (Node *) malloc(sizeof(Node));
+    // create the rest nedes and assign them
+    for (i = 2; i <= n; i++) {
+        new_node = (Node *)malloc(sizeof(Node));
         new_node->data = i;
         temp->next = new_node;
         temp = new_node;
     }
 
-    // 最后一个节点指向头部构成循环链表
+    // set "next" of the last node towards the first one
     temp->next = head;
 
     return head;
 }
 
 void count_off(Node *head, int n, int k, int m) {
-Node *temp = head;
+    Node *temp = head;
+    Node *delete = NULL;
     if (k == 1) {
         for (int i = 1; i < n; i++) {
             temp = temp->next;
         }
-    }else{
-        for (int i = 1; i < k-1; i++) {
-        		temp = temp->next;
-    		}
+    } else {
+        for (int i = 1; i < k - 1; i++) {
+            temp = temp->next;
+        }
     }
+
     int num = 0;
     int count = 0;
     while (count < n) {
         num++;
         if (num == m) {
-            count++;
-            if(count == n - 1){
-            	printf("%d", temp->next->data);
-            }else{
-               	printf("%d ", temp->next->data); 
+            if (count == n - 1) {
+                printf("%d", temp->next->data);
+            } else {
+                printf("%d ", temp->next->data);
             }
-            
-            
+            count++;
+            delete = temp->next;
             temp->next = temp->next->next;
-            
+            free(delete);
             num = 0;
-        }else{
-            
+        } else {
             temp = temp->next;
         }
     }
