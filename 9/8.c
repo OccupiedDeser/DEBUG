@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 //计算阶乘
-long double factorial(int n) {
+long double factorial(int n)
+{
     long double result = 1;
     int i;
     for (i = 1; i <= n; i++) {
@@ -10,13 +11,15 @@ long double factorial(int n) {
     return result;
 }
 //计算组合数
-long long C(int n, int m) {
+long long C(int n, int m)
+{
     long long result;
     result = (long long)(factorial(n) / (factorial(m) * factorial(n - m)));
     return result;
 }
 
-int main() {
+int main()
+{
     int n;
     scanf("%d", &n);
     long long i = 0;
