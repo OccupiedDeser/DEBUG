@@ -1,12 +1,13 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     int shuru;
     int geshu;
     int hangshu;
     int shuru2;
     scanf("%d", &shuru);
     shuru2 = shuru;
-    //wtf！汉语拼音？
+
     for (hangshu = 1; hangshu <= shuru; hangshu++) {
         shuru2 = shuru - hangshu + 1;
         for (geshu = 1; geshu <= shuru; geshu++) {
