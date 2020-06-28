@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int i, N;
     int a[51] = {0};
     scanf("%d", &N);

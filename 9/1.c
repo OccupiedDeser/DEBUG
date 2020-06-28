@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int N; // total number of steps
     scanf("%d", &N);
     int step[51]; // step[i] records methods to reach the ist step

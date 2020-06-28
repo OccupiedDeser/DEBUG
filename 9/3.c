@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-long long int fun(int n) {
+long long int fun(int n) 
+{
     if (n == 1)
         return 0;
     if (n == 2 || n == 3)
