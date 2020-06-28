@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main() 
+{
     int a, b, c, d;
     scanf("%d", &a);
     for (d = 2; d <= a; d += 1) {
