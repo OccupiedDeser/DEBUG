@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-int f(char k[500]) {
-    char s[33]; //ÒªÊä³öµÄ×Ö·û´®Êý×é
+
+int f(char k[500])
+{
+    char s[33]; //Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     int bits[32];
     int arr[32] = {0};
     int i;
@@ -17,7 +19,9 @@ int f(char k[500]) {
 
     return 0;
 }
-int main() {
+
+int main()
+{
     char k[500];
     scanf("%s", k);
     f(k);

@@ -2,13 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     int arr[32];
     char str[32];
     int bits[32];
     char result[32];
-
-    // scanf("%s", &arr[32]);
     char input;
     int j = 0;
 

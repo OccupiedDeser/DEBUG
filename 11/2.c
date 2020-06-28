@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     int arr[33] = {0};
     int bits[33];
     // char input[500];
@@ -15,20 +16,10 @@ int main() {
         arr[counter % 32] += input; //第i位存入arr[i%32]中
     }
 
-    // printf("arr = \n");
-    // for(int i = 0; i < 32; i++) {
-    //     printf("%d ", arr[i]);
-    // }
-    // printf("\n");
-
     for (j = 0; j < 32; j++) {
         bits[j] = arr[31 - j] ^ (arr[j] << 1);
     }
-    //  printf("bits = \n");
-    //  for(int i = 0; i < 32; i++) {
-    //      printf("%d ", bits[i]);
-    //  }
-    //  printf("\n");
+
     for (int j = 0; j < 32; j++) {
         output[j + 1] = (bits[j] % 85 + 34); // output感觉就没用啊，不如直接输出
         printf("%c", output[j + 1]);

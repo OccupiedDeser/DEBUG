@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 const int maxn = 10010;
-int main() {
-    int i, j, k;
+int main()
+{
+    int i = 0, j, k;
     int arr[32] = {0};
     int bits[32];
     char str[maxn], rstr[32];
-    i = 0;
+
     while (scanf("%c", &str[i]) != EOF) {
         if (str[i] == '\n') {
             str[i] = '\0';
