@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
     int matrix_a[10][10];
     int matrix_b[10][10];

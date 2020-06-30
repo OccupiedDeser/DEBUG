@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
     // declaration
     int mtxA[10][10], mtxB[10][10], mtxC[10][10], m, n;

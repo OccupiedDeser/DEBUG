@@ -56,9 +56,9 @@ int main()
                     }
                 }
                 if (count == m * n - 1) {
-                        printf("%d", matrix[j][n - i / 4 - 1]);
-                        count++;
-                    }
+                    printf("%d", matrix[j][n - i / 4 - 1]);
+                    count++;
+                }
                 break;
             case 2:
                 for (j = n - 1 - i / 4; j > i / 4; j--) {
@@ -69,9 +69,9 @@ int main()
                     }
                 }
                 if (count == m * n - 1) {
-                        printf("%d", matrix[m - i / 4 - 1][j]);
-                        count++;
-                    }
+                    printf("%d", matrix[m - i / 4 - 1][j]);
+                    count++;
+                }
                 break;
             case 3:
                 for (j = m - 1 - i / 4; j > i / 4; j--) {

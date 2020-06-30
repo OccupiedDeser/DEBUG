@@ -7,8 +7,7 @@ int main()
         printf("NO");
     } else if (a == 0) {
         printf("NO");
-    } else if (b == 1 || b == 3 || b == 5 || b == 7 | b == 8 || b == 10 ||
-               b == 12) {
+    } else if (b == 1 || b == 3 || b == 5 || b == 7 | b == 8 || b == 10 || b == 12) {
         if (c <= 31)
             printf("YES");
         else

@@ -29,4 +29,7 @@ double bisection(int p, int q, double (*func)(int, int, double))
     return m;
 }
 
-double f(int p, int q, double x) { return p * x + q; }
+double f(int p, int q, double x)
+{
+    return p * x + q;
+}

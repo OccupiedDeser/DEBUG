@@ -3,9 +3,9 @@
 #define PI 3.14159
 int main()
 {
-    float r;
-    scanf("%f", &r);
-    printf("%.3f\n", PI * r * 2);
-    printf("%.3f", PI * r * r);
+    double r;
+    scanf("%lf", &r);
+    printf("%.3lf\n", PI * r * 2);
+    printf("%.3lf", PI * r * r);
     return 0;
 }

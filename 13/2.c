@@ -12,6 +12,13 @@ int main()
 {
     int n, k, m;
     scanf("%d %d %d", &n, &k, &m);
+
+    if(k == 1&&m==1){
+        for(int i = 1; i<=n;i++){
+            printf("%d ", i);
+        }
+        return 0;
+    }
     Node *head = circle_create(n);
     count_off(head, n, k, m);
     return 0;

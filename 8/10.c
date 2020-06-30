@@ -5,8 +5,8 @@ int main()
     int n;
     scanf("%d\n", &n);
     int i, j, k;
-    char a[100][100] = {'\0'};
-    char temp[100] = {'\0'};
+    char a[100][105] = {'\0'};
+    char temp[105] = {'\0'};
 
     for (i = 0; i < n; i++) {
         for (j = 0; j < 100; j++) {

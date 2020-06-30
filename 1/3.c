@@ -4,7 +4,8 @@
 
 double bisection(int p, int q, double (*func)(int, int, double));
 double f(int p, int q, double x);
-int main() {
+int main()
+{
     int p;
     int q;
     scanf("%d%d", &p, &q);
@@ -12,7 +13,8 @@ int main() {
     return 0;
 }
 
-double bisection(int p, int q, double (*func)(int, int, double)) {
+double bisection(int p, int q, double (*func)(int, int, double))
+{
     double a = 20.0;
     double b = -20.0;
     double m;
@@ -29,4 +31,7 @@ double bisection(int p, int q, double (*func)(int, int, double)) {
     }
 }
 
-double f(int p, int q, double x) { return p * x + q; }
+double f(int p, int q, double x)
+{
+    return p * x + q;
+}

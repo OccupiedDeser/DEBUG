@@ -19,7 +19,7 @@ int main()
         }
     }
 
-    int *m3 = (int *)malloc(sizeof(int) * m * m);
+    int* m3 = (int*)malloc(sizeof(int) * m * m);
     memset(m3, 0, sizeof(int) * m * m);
 
     for (int i = 0; i < m; i++) {
